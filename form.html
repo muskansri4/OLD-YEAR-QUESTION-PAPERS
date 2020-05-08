@@ -1,0 +1,65 @@
+<html>
+<head>
+<title>OLD PAPER</title>
+<style type="text/css">
+body{background-image:url(wallpaper.JPG);
+background-repeat:no repeat;
+background-position:50%}
+#constant2{
+position:absolute;
+left:150px;
+top:290px;}
+</style>
+
+<h1><strong> Please fill the details</strong></h1>
+<script type="text/javascript">
+
+function validate()
+{
+var username=document.getElementById("text1");
+var password=document.getElementById("text2");
+if(username.value.trim()==""|| password.value.trim()=="")
+{ alert("enter the username and password");
+return false;
+else if(username.value.trim()=="abes"&&password.value.trim()=="032")
+{true;}
+else{alert("please enter correct password and username"); return false;}
+}</script>
+</head>
+<body>
+<div id="constant2"> <em><img src="paper.PNG"><br/></em></div>
+<form onsubmit="return validate()" action="webD.html">
+
+
+<p><em> Name of the college</em></p>
+<select id="selectionbox"><option value="abes">ABES EC</option>
+<option value="other">OTHER COLLEGE</option>
+<option value="different">other university</option>
+</select><br/>
+<p><em> Branch name </em></p>
+<select id="selectionbox"><option value="ECE">ECE</option>
+<option value="CSE">CSE</option>
+<option value="IT">IT</option>
+</select><br/>
+<p>
+<input id="text1" placeholder="enter name"><br/><br/>
+<input type ="password" id="text2" placeholder="password"><hr/>
+<button type="submit">submit</button>
+</form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
